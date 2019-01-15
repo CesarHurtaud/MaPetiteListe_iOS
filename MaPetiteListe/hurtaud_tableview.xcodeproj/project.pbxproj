@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0E33F5B21ADB7EE00D937E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E33F5A21ADB7EE00D937E0 /* AppDelegate.swift */; };
+		B0E33F6021ADB7EE00D937E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E33F5E21ADB7EE00D937E0 /* Main.storyboard */; };
+		B0E33F6221ADB7F300D937E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0E33F6121ADB7F300D937E0 /* Assets.xcassets */; };
+		B0E33F6521ADB7F300D937E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E33F6321ADB7F300D937E0 /* LaunchScreen.storyboard */; };
+		BD7642F021EDEB92005FCB99 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7642E321EDEB8B005FCB99 /* SQLite.framework */; };
+		BD7642F121EDEB97005FCB99 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7642E321EDEB8B005FCB99 /* SQLite.framework */; };
+		BD7642F221EDEB97005FCB99 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD7642E321EDEB8B005FCB99 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD76430121EDF8BF005FCB99 /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76430021EDF8BF005FCB99 /* DataBaseHelper.swift */; };
+		BD76430321EDF8E0005FCB99 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76430221EDF8E0005FCB99 /* Item.swift */; };
+		BD76430521EDF91E005FCB99 /* TDL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76430421EDF91E005FCB99 /* TDL.swift */; };
+		BD76430721EDF97B005FCB99 /* InitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76430621EDF97B005FCB99 /* InitData.swift */; };
+		BD76430C21EDFA1D005FCB99 /* TDLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76430B21EDFA1D005FCB99 /* TDLViewController.swift */; };
+		BD76431021EDFD1C005FCB99 /* PopUpListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76430F21EDFD1C005FCB99 /* PopUpListViewController.swift */; };
+		BD90139221EC8454000E5CA2 /* PopUpLIstControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD90139121EC8454000E5CA2 /* PopUpLIstControllerViewController.m */; };
+		BD90139821ECB5EC000E5CA2 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90139721ECB5EC000E5CA2 /* ItemViewController.swift */; };
+		BD90139D21ECF5D6000E5CA2 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90139C21ECF5D6000E5CA2 /* UIColor+Hex.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0E33F6C21ADB7F300D937E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0E33F4F21ADB7ED00D937E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0E33F5621ADB7ED00D937E0;
+			remoteInfo = hurtaud_tableview;
+		};
+		B0E33F7721ADB7F300D937E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0E33F4F21ADB7ED00D937E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0E33F5621ADB7ED00D937E0;
+			remoteInfo = hurtaud_tableview;
+		};
+		BD7642E221EDEB8B005FCB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7642D821EDEB8B005FCB99 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		BD7642E421EDEB8B005FCB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7642D821EDEB8B005FCB99 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		BD7642E621EDEB8B005FCB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7642D821EDEB8B005FCB99 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		BD7642E821EDEB8B005FCB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7642D821EDEB8B005FCB99 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		BD7642EA21EDEB8B005FCB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7642D821EDEB8B005FCB99 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		BD7642EC21EDEB8B005FCB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7642D821EDEB8B005FCB99 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		BD7642EE21EDEB8B005FCB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7642D821EDEB8B005FCB99 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		BD7642F321EDEB97005FCB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7642D821EDEB8B005FCB99 /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD90137121EC8158000E5CA2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BD7642F221EDEB97005FCB99 /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B0E33F5721ADB7ED00D937E0 /* hurtaud_tableview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hurtaud_tableview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E33F5A21ADB7EE00D937E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0E33F5F21ADB7EE00D937E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0E33F6121ADB7F300D937E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0E33F6421ADB7F300D937E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0E33F6621ADB7F300D937E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0E33F6B21ADB7F300D937E0 /* hurtaud_tableviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hurtaud_tableviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E33F7621ADB7F300D937E0 /* hurtaud_tableviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hurtaud_tableviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7642D821EDEB8B005FCB99 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		BD76430021EDF8BF005FCB99 /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
+		BD76430221EDF8E0005FCB99 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BD76430421EDF91E005FCB99 /* TDL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDL.swift; sourceTree = "<group>"; };
+		BD76430621EDF97B005FCB99 /* InitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitData.swift; sourceTree = "<group>"; };
+		BD76430B21EDFA1D005FCB99 /* TDLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDLViewController.swift; sourceTree = "<group>"; };
+		BD76430F21EDFD1C005FCB99 /* PopUpListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpListViewController.swift; sourceTree = "<group>"; };
+		BD90138F21EC844D000E5CA2 /* PopUpLIstControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopUpLIstControllerViewController.h; sourceTree = "<group>"; };
+		BD90139021EC8453000E5CA2 /* hurtaud_tableview-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hurtaud_tableview-Bridging-Header.h"; sourceTree = "<group>"; };
+		BD90139121EC8454000E5CA2 /* PopUpLIstControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpLIstControllerViewController.m; sourceTree = "<group>"; };
+		BD90139721ECB5EC000E5CA2 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		BD90139C21ECF5D6000E5CA2 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0E33F5421ADB7ED00D937E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7642F121EDEB97005FCB99 /* SQLite.framework in Frameworks */,
+				BD7642F021EDEB92005FCB99 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E33F6821ADB7F300D937E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E33F7321ADB7F300D937E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0E33F4E21ADB7ED00D937E0 = {
+			isa = PBXGroup;
+			children = (
+				B0E33F5921ADB7ED00D937E0 /* hurtaud_tableview */,
+				B0E33F5821ADB7ED00D937E0 /* Products */,
+				BD7642D821EDEB8B005FCB99 /* SQLite.xcodeproj */,
+				BD90136B21EC8154000E5CA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B0E33F5821ADB7ED00D937E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0E33F5721ADB7ED00D937E0 /* hurtaud_tableview.app */,
+				B0E33F6B21ADB7F300D937E0 /* hurtaud_tableviewTests.xctest */,
+				B0E33F7621ADB7F300D937E0 /* hurtaud_tableviewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0E33F5921ADB7ED00D937E0 /* hurtaud_tableview */ = {
+			isa = PBXGroup;
+			children = (
+				BD90139B21ECF5A5000E5CA2 /* Extensions */,
+				B0E33F5A21ADB7EE00D937E0 /* AppDelegate.swift */,
+				B0E33F5E21ADB7EE00D937E0 /* Main.storyboard */,
+				B0E33F6121ADB7F300D937E0 /* Assets.xcassets */,
+				BD76430021EDF8BF005FCB99 /* DataBaseHelper.swift */,
+				BD76430221EDF8E0005FCB99 /* Item.swift */,
+				BD76430421EDF91E005FCB99 /* TDL.swift */,
+				BD76430621EDF97B005FCB99 /* InitData.swift */,
+				BD76430B21EDFA1D005FCB99 /* TDLViewController.swift */,
+				BD90139721ECB5EC000E5CA2 /* ItemViewController.swift */,
+				B0E33F6321ADB7F300D937E0 /* LaunchScreen.storyboard */,
+				B0E33F6621ADB7F300D937E0 /* Info.plist */,
+				BD76430F21EDFD1C005FCB99 /* PopUpListViewController.swift */,
+				BD90139121EC8454000E5CA2 /* PopUpLIstControllerViewController.m */,
+				BD90138F21EC844D000E5CA2 /* PopUpLIstControllerViewController.h */,
+				BD90139021EC8453000E5CA2 /* hurtaud_tableview-Bridging-Header.h */,
+			);
+			path = hurtaud_tableview;
+			sourceTree = "<group>";
+		};
+		BD7642D921EDEB8B005FCB99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD7642E321EDEB8B005FCB99 /* SQLite.framework */,
+				BD7642E521EDEB8B005FCB99 /* SQLiteTests iOS.xctest */,
+				BD7642E721EDEB8B005FCB99 /* SQLite.framework */,
+				BD7642E921EDEB8B005FCB99 /* SQLiteTests Mac.xctest */,
+				BD7642EB21EDEB8B005FCB99 /* SQLite.framework */,
+				BD7642ED21EDEB8B005FCB99 /* SQLiteTests tvOS.xctest */,
+				BD7642EF21EDEB8B005FCB99 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD90136B21EC8154000E5CA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD90139B21ECF5A5000E5CA2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD90139C21ECF5D6000E5CA2 /* UIColor+Hex.swift */,
+			);
+			name = Extensions;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0E33F5621ADB7ED00D937E0 /* hurtaud_tableview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0E33F7F21ADB7F300D937E0 /* Build configuration list for PBXNativeTarget "hurtaud_tableview" */;
+			buildPhases = (
+				B0E33F5321ADB7ED00D937E0 /* Sources */,
+				B0E33F5421ADB7ED00D937E0 /* Frameworks */,
+				B0E33F5521ADB7ED00D937E0 /* Resources */,
+				BD90137121EC8158000E5CA2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD7642F421EDEB97005FCB99 /* PBXTargetDependency */,
+			);
+			name = hurtaud_tableview;
+			productName = hurtaud_tableview;
+			productReference = B0E33F5721ADB7ED00D937E0 /* hurtaud_tableview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0E33F6A21ADB7F300D937E0 /* hurtaud_tableviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0E33F8221ADB7F300D937E0 /* Build configuration list for PBXNativeTarget "hurtaud_tableviewTests" */;
+			buildPhases = (
+				B0E33F6721ADB7F300D937E0 /* Sources */,
+				B0E33F6821ADB7F300D937E0 /* Frameworks */,
+				B0E33F6921ADB7F300D937E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0E33F6D21ADB7F300D937E0 /* PBXTargetDependency */,
+			);
+			name = hurtaud_tableviewTests;
+			productName = hurtaud_tableviewTests;
+			productReference = B0E33F6B21ADB7F300D937E0 /* hurtaud_tableviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0E33F7521ADB7F300D937E0 /* hurtaud_tableviewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0E33F8521ADB7F300D937E0 /* Build configuration list for PBXNativeTarget "hurtaud_tableviewUITests" */;
+			buildPhases = (
+				B0E33F7221ADB7F300D937E0 /* Sources */,
+				B0E33F7321ADB7F300D937E0 /* Frameworks */,
+				B0E33F7421ADB7F300D937E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0E33F7821ADB7F300D937E0 /* PBXTargetDependency */,
+			);
+			name = hurtaud_tableviewUITests;
+			productName = hurtaud_tableviewUITests;
+			productReference = B0E33F7621ADB7F300D937E0 /* hurtaud_tableviewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0E33F4F21ADB7ED00D937E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "HURTAUD Cesar";
+				TargetAttributes = {
+					B0E33F5621ADB7ED00D937E0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+					B0E33F6A21ADB7F300D937E0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = B0E33F5621ADB7ED00D937E0;
+					};
+					B0E33F7521ADB7F300D937E0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = B0E33F5621ADB7ED00D937E0;
+					};
+				};
+			};
+			buildConfigurationList = B0E33F5221ADB7ED00D937E0 /* Build configuration list for PBXProject "hurtaud_tableview" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0E33F4E21ADB7ED00D937E0;
+			productRefGroup = B0E33F5821ADB7ED00D937E0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BD7642D921EDEB8B005FCB99 /* Products */;
+					ProjectRef = BD7642D821EDEB8B005FCB99 /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B0E33F5621ADB7ED00D937E0 /* hurtaud_tableview */,
+				B0E33F6A21ADB7F300D937E0 /* hurtaud_tableviewTests */,
+				B0E33F7521ADB7F300D937E0 /* hurtaud_tableviewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BD7642E321EDEB8B005FCB99 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BD7642E221EDEB8B005FCB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD7642E521EDEB8B005FCB99 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = BD7642E421EDEB8B005FCB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD7642E721EDEB8B005FCB99 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BD7642E621EDEB8B005FCB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD7642E921EDEB8B005FCB99 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = BD7642E821EDEB8B005FCB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD7642EB21EDEB8B005FCB99 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BD7642EA21EDEB8B005FCB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD7642ED21EDEB8B005FCB99 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = BD7642EC21EDEB8B005FCB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD7642EF21EDEB8B005FCB99 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BD7642EE21EDEB8B005FCB99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0E33F5521ADB7ED00D937E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0E33F6521ADB7F300D937E0 /* LaunchScreen.storyboard in Resources */,
+				B0E33F6221ADB7F300D937E0 /* Assets.xcassets in Resources */,
+				B0E33F6021ADB7EE00D937E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E33F6921ADB7F300D937E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E33F7421ADB7F300D937E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0E33F5321ADB7ED00D937E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD76430121EDF8BF005FCB99 /* DataBaseHelper.swift in Sources */,
+				BD90139221EC8454000E5CA2 /* PopUpLIstControllerViewController.m in Sources */,
+				BD76430C21EDFA1D005FCB99 /* TDLViewController.swift in Sources */,
+				BD76431021EDFD1C005FCB99 /* PopUpListViewController.swift in Sources */,
+				BD90139D21ECF5D6000E5CA2 /* UIColor+Hex.swift in Sources */,
+				BD76430521EDF91E005FCB99 /* TDL.swift in Sources */,
+				BD76430321EDF8E0005FCB99 /* Item.swift in Sources */,
+				BD76430721EDF97B005FCB99 /* InitData.swift in Sources */,
+				BD90139821ECB5EC000E5CA2 /* ItemViewController.swift in Sources */,
+				B0E33F5B21ADB7EE00D937E0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E33F6721ADB7F300D937E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E33F7221ADB7F300D937E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0E33F6D21ADB7F300D937E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0E33F5621ADB7ED00D937E0 /* hurtaud_tableview */;
+			targetProxy = B0E33F6C21ADB7F300D937E0 /* PBXContainerItemProxy */;
+		};
+		B0E33F7821ADB7F300D937E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0E33F5621ADB7ED00D937E0 /* hurtaud_tableview */;
+			targetProxy = B0E33F7721ADB7F300D937E0 /* PBXContainerItemProxy */;
+		};
+		BD7642F421EDEB97005FCB99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = BD7642F321EDEB97005FCB99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0E33F5E21ADB7EE00D937E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0E33F5F21ADB7EE00D937E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0E33F6321ADB7F300D937E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0E33F6421ADB7F300D937E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0E33F7D21ADB7F300D937E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0E33F7E21ADB7F300D937E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0E33F8021ADB7F300D937E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hurtaud_tableview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UTT.hurtaud-tableview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hurtaud_tableview/hurtaud_tableview-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B0E33F8121ADB7F300D937E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hurtaud_tableview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UTT.hurtaud-tableview";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hurtaud_tableview/hurtaud_tableview-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B0E33F8321ADB7F300D937E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hurtaud_tableviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UTT.hurtaud-tableviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hurtaud_tableview.app/hurtaud_tableview";
+			};
+			name = Debug;
+		};
+		B0E33F8421ADB7F300D937E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hurtaud_tableviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UTT.hurtaud-tableviewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hurtaud_tableview.app/hurtaud_tableview";
+			};
+			name = Release;
+		};
+		B0E33F8621ADB7F300D937E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hurtaud_tableviewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UTT.hurtaud-tableviewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hurtaud_tableview;
+			};
+			name = Debug;
+		};
+		B0E33F8721ADB7F300D937E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hurtaud_tableviewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "UTT.hurtaud-tableviewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hurtaud_tableview;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0E33F5221ADB7ED00D937E0 /* Build configuration list for PBXProject "hurtaud_tableview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E33F7D21ADB7F300D937E0 /* Debug */,
+				B0E33F7E21ADB7F300D937E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0E33F7F21ADB7F300D937E0 /* Build configuration list for PBXNativeTarget "hurtaud_tableview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E33F8021ADB7F300D937E0 /* Debug */,
+				B0E33F8121ADB7F300D937E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0E33F8221ADB7F300D937E0 /* Build configuration list for PBXNativeTarget "hurtaud_tableviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E33F8321ADB7F300D937E0 /* Debug */,
+				B0E33F8421ADB7F300D937E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0E33F8521ADB7F300D937E0 /* Build configuration list for PBXNativeTarget "hurtaud_tableviewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E33F8621ADB7F300D937E0 /* Debug */,
+				B0E33F8721ADB7F300D937E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0E33F4F21ADB7ED00D937E0 /* Project object */;
+}
